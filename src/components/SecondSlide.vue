@@ -17,13 +17,13 @@ img {
 }
 p {
     margin: 0;
-    padding: 20px 4px;
+    padding: 19px 4px;
     position: absolute;
-    top: calc(20px + 1vw);
+    top: 20px;
     left: 3vw;
     background-color: white;
     color: red;
-    border-radius: 50%;
+    border-radius: 100%;
     font-size: 23px;
     font-weight: bold;
 }
@@ -46,13 +46,14 @@ p {
 }
 #oval-3 {
     width: 35px;
-    height: 17px;
+    height: 16px;
     top: calc(20px + 16.4vw);
     left: 5.95vw;
 }
 
 @media(min-width: 640px) {
     p {
+        top: 27px;
         left: calc(((100vw - 640px) / 2) + 20px);
     }
     #oval-1 {

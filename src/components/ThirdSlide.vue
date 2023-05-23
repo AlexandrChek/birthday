@@ -17,13 +17,13 @@ img {
 }
 p {
     margin: 0;
-    padding: 20px 4px;
+    padding: 19px 4px;
     position: absolute;
-    top: calc(20px + 1vw);
+    top: 20px;
     left: 3vw;
     background-color: white;
     color: red;
-    border-radius: 50%;
+    border-radius: 100%;
     font-size: 23px;
     font-weight: bold;
 }
@@ -77,30 +77,31 @@ p {
 #oval-8 {
     width: 20px;
     height: 15px;
-    top: calc(20px + 31vw);
+    top: calc(20px + 31.5vw);
     left: 58vw;
 }
 #oval-9 {
     width: 35px;
     height: 20px;
-    top: calc(20px + 19.5vw);
+    top: calc(20px + 20vw);
     left: 50vw;
 }
 #oval-10 {
     width: 20px;
-    height: 15px;
+    height: 13px;
     top: calc(20px + 27vw);
-    left: 70vw;
+    left: 70.5vw;
 }
 #oval-11 {
     width: 35px;
-    height: 20px;
+    height: 19px;
     top: calc(20px + 18.5vw);
-    left: 64vw;
+    left: 64.5vw;
 }
 
 @media(min-width: 515px) {
     p {
+        top: 33px;
         left: calc(((100vw - 515px) / 2) + 23px);
     }
     #oval-1 {
