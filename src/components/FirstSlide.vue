@@ -19,7 +19,7 @@ p {
     margin: 0;
     padding: 17px 4px;
     position: absolute;
-    top: calc(20px + 1vw);
+    top: 20px;
     left: 3vw;
     background-color: white;
     color: red;
@@ -47,7 +47,7 @@ p {
 #oval-3 {
     width: 35px;
     height: 20px;
-    top: calc(20px + 19.1vw);
+    top: calc(20px + 19vw);
     left: 12vw;
 }
 
