@@ -88,15 +88,15 @@ p {
 }
 #oval-10 {
     width: 20px;
-    height: 13px;
-    top: calc(20px + 26.3vw);
-    left: 70vw;
+    height: 12.5px;
+    top: calc(20px + 26vw);
+    left: 69vw;
 }
 #oval-11 {
     width: 35px;
     height: 19px;
-    top: calc(20px + 18.5vw);
-    left: 64.5vw;
+    top: calc(20px + 18.8vw);
+    left: 64vw;
 }
 
 @media(min-width: 515px) {
