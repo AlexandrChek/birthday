@@ -17,9 +17,9 @@ img {
 }
 p {
     margin: 0;
-    padding: 19px 4px;
+    padding: 17px 4px;
     position: absolute;
-    top: 20px;
+    top: calc(20px + 1vw);
     left: 3vw;
     background-color: white;
     color: red;
@@ -89,8 +89,8 @@ p {
 #oval-10 {
     width: 20px;
     height: 13px;
-    top: calc(20px + 27vw);
-    left: 70.5vw;
+    top: calc(20px + 26.3vw);
+    left: 70vw;
 }
 #oval-11 {
     width: 35px;

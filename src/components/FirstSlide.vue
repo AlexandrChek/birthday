@@ -17,9 +17,9 @@ img {
 }
 p {
     margin: 0;
-    padding: 19px 4px;
+    padding: 17px 4px;
     position: absolute;
-    top: 20px;
+    top: calc(20px + 1vw);
     left: 3vw;
     background-color: white;
     color: red;
