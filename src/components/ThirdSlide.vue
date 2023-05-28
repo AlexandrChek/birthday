@@ -1,152 +1,102 @@
 <template>
-    <img src="../assets/meercat.jpg" alt="Meercat">
-    <p>С Днём Рождения, Наташа!!!</p>
-    <div v-for="item in 11" :key="item" :id="`oval-${item}`" class="ovals"></div>
+    <div class="wrapper">
+        <img src="../assets/meercat.jpg" alt="Meercat">
+        <HappyBirthday class="positioning"/>
+        <div v-for="item in 11" :key="item" :id="`oval-${item}`" class="ovals"></div>
+    </div>
 </template>
 
 <script>
+import HappyBirthday from './HappyBirthday.vue'
+
 export default {
-    name: 'ThirdSlide'
+    name: 'ThirdSlide',
+    components: {HappyBirthday}
 }
 </script>
 
 <style scoped>
-img {
-  max-height: calc(100vh - 40px);
-  max-width: 100%;
-}
-p {
-    margin: 0;
-    padding: 17px 4px;
-    position: absolute;
-    top: calc(20px + 1vw);
-    left: 3vw;
-    background-color: white;
-    color: red;
-    border-radius: 100%;
-    font-size: 23px;
-    font-weight: bold;
-}
-.ovals {
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
+.positioning {
+    top: 3%;
+    left: 1%;
 }
 #oval-1 {
     width: 10px;
     height: 9px;
-    top: calc(20px + 42vw);
-    left: 22vw;
+    top: 28%;
+    left: 21%;
 }
 #oval-2 {
     width: 20px;
     height: 15px;
-    top: calc(20px + 31vw);
-    left: 17vw;
+    top: 21%;
+    left: 17%;
 }
 #oval-3 {
     width: 35px;
     height: 20px;
-    top: calc(20px + 19vw);
-    left: 12vw;
+    top: 14%;
+    left: 12%;
 }
 #oval-4 {
     width: 10px;
     height: 9px;
-    top: calc(20px + 44vw);
-    left: 45vw;
+    top: 30%;
+    left: 45%;
 }
 #oval-5 {
     width: 20px;
     height: 15px;
-    top: calc(20px + 32vw);
-    left: 37vw;
+    top: 23%;
+    left: 37%;
 }
 #oval-6 {
     width: 35px;
     height: 20px;
-    top: calc(20px + 20vw);
-    left: 30vw;
+    top: 15%;
+    left: 30%;
 }
 #oval-7 {
     width: 10px;
     height: 9px;
-    top: calc(20px + 44vw);
-    left: 67vw;
+    top: 32.5%;
+    left: 70%;
 }
 #oval-8 {
     width: 20px;
     height: 15px;
-    top: calc(20px + 31.5vw);
-    left: 58vw;
+    top: 24.5%;
+    left: 58.5%;
 }
 #oval-9 {
     width: 35px;
     height: 20px;
-    top: calc(20px + 20vw);
-    left: 50vw;
+    top: 15%;
+    left: 50%;
 }
 #oval-10 {
-    width: 20px;
-    height: 12.5px;
-    top: calc(20px + 26vw);
-    left: 69vw;
+    width: 18.5px;
+    height: 12px;
+    top: 19.5%;
+    left: 69.5%;
 }
 #oval-11 {
     width: 35px;
     height: 19px;
-    top: calc(20px + 18.8vw);
-    left: 64vw;
+    top: 14.4%;
+    left: 64%;
 }
 
-@media(min-width: 515px) {
-    p {
-        top: 33px;
-        left: calc(((100vw - 515px) / 2) + 23px);
-    }
-    #oval-1 {
-        top: 245px;
-        left: calc(((100vw - 515px) / 2) + 130px);
-    }
-    #oval-2 {
-        top: 194px;
-        left: calc(((100vw - 515px) / 2) + 97px);
-    }
-    #oval-3 {
-        top: 124px;
-        left: calc(((100vw - 515px) / 2) + 68px);
-    }
-    #oval-4 {
-        top: 247px;
-        left: calc(((100vw - 515px) / 2) + 232px);
-    }
-    #oval-5 {
-        top: 185px;
-        left: calc(((100vw - 515px) / 2) + 191px);
-    }
-    #oval-6 {
-        top: 123px;
-        left: calc(((100vw - 515px) / 2) + 155px);
-    }
-    #oval-7 {
-        top: 247px;
-        left: calc(((100vw - 515px) / 2) + 345px);
-    }
-    #oval-8 {
-        top: 177px;
-        left: calc(((100vw - 515px) / 2) + 299px);
-    }
-    #oval-9 {
-        top: 118px;
-        left: calc(((100vw - 515px) / 2) + 257px);
-    }
-    #oval-10 {
-        top: 159px;
-        left: calc(((100vw - 515px) / 2) + 361px);
-    }
-    #oval-11 {
-        top: 102px;
-        left: calc(((100vw - 515px) / 2) + 312px);
+@media(min-width: 400px) {
+    .positioning {
+        top: 5.7%;
+        left: 7%;
+    } 
+}
+@media(min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
+    .positioning {
+        top: 1.25%;
+        left: 1%;
     }
 }
 </style>

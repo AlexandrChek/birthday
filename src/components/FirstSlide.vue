@@ -1,72 +1,47 @@
 <template>
-    <img src="../assets/tiger.png" alt="Tiger">
-    <p>С Днём Рождения, Наташа!!!</p>
-    <div v-for="item in 3" :key="item" :id="`oval-${item}`" class="ovals"></div>
+    <div class="wrapper">
+        <img src="../assets/tiger.png" alt="Tiger">
+        <HappyBirthday class="positioning"/>
+        <div v-for="item in 3" :key="item" :id="`oval-${item}`" class="ovals"></div>
+    </div>
 </template>
 
 <script>
+import HappyBirthday from './HappyBirthday.vue'
+
 export default {
-    name: 'FirstSlide'
+    name: 'FirstSlide',
+    components: {HappyBirthday}
 }
 </script>
 
 <style scoped>
-img {
-  max-height: calc(100vh - 40px);
-  max-width: 100%;
-}
-p {
-    margin: 0;
-    padding: 17px 4px;
-    position: absolute;
-    top: 20px;
-    left: 3vw;
-    background-color: white;
-    color: red;
-    border-radius: 100%;
-    font-size: 23px;
-    font-weight: bold;
-}
-.ovals {
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
+.positioning {
+    top: 2.5%;
+    left: 1%;
 }
 #oval-1 {
     width: 10px;
     height: 9px;
-    top: calc(20px + 40vw);
-    left: 22vw;
+    top: 28%;
+    left: 22%;
 }
 #oval-2 {
     width: 20px;
     height: 15px;
-    top: calc(20px + 31vw);
-    left: 17vw;
+    top: 22%;
+    left: 17%;
 }
 #oval-3 {
     width: 35px;
     height: 20px;
-    top: calc(20px + 19vw);
-    left: 12vw;
+    top: 13.5%;
+    left: 12%;
 }
 
-@media(min-width: 565px) {
-    p {
-        top: 29px;
-        left: calc(((100vw - 565px) / 2) + 20px);
-    }
-    #oval-1 {
-        top: 245px;
-        left: calc(((100vw - 565px) / 2) + 130px);
-    }
-    #oval-2 {
-        top: 195px;
-        left: calc(((100vw - 565px) / 2) + 97px);
-    }
-    #oval-3 {
-        top: 127px;
-        left: calc(((100vw - 565px) / 2) + 68px);
+@media(min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
+    .positioning {
+        top: .5%;
     }
 }
 </style>

@@ -1,181 +1,112 @@
 <template>
-    <img src="../assets/turtles.webp" alt="Turtles">
-    <p>Happy Birthday, Natasha!!!</p>
-    <div v-for="item in 13" :key="item" :id="`oval-${item}`" class="ovals"></div>
+    <div class="wrapper">
+        <img src="../assets/turtles.webp" alt="Turtles">
+        <HappyBirthday class="positioning"/>
+        <div v-for="item in 13" :key="item" :id="`oval-${item}`" class="ovals"></div>
+    </div>
 </template>
 
 <script>
+import HappyBirthday from './HappyBirthday.vue'
+
 export default {
-    name: 'FourthSlide'
+    name: 'FourthSlide',
+    components: {HappyBirthday}
 }
 </script>
 
 <style scoped>
-img {
-  max-height: calc(100vh - 40px);
-  max-width: 100%;
-}
-p {
-    margin: 0;
-    padding: 13px 4px;
-    position: absolute;
-    top: 20px;
-    left: 3vw;
-    background-color: white;
-    color: red;
-    border-radius: 100%;
-    font-size: 23px;
-    font-weight: bold;
-}
-.ovals {
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
+.positioning {
+    left: 1%;
 }
 #oval-1 {
     width: 10px;
     height: 9px;
-    top: calc(20px + 24.5vw);
-    left: 10vw;
+    top: 22%;
+    left: 9%;
 }
 #oval-2 {
     width: 20px;
     height: 10px;
-    top: calc(20px + 19.95vw);
-    left: 7.5vw;
+    top: 17.3%;
+    left: 5.4%;
 }
 #oval-3 {
     width: 34px;
     height: 15px;
-    top: calc(20px + 13.8vw);
-    left: 7.9vw;
+    top: 11%;
+    left: 5%;
 }
 #oval-4 {
     width: 10px;
     height: 7px;
-    top: calc(20px + 18.5vw);
-    left: 37vw;
+    top: 17%;
+    left: 35%;
 }
 #oval-5 {
     width: 35px;
     height: 14px;
-    top: calc(20px + 14.5vw);
-    left: 30vw;
+    top: 12.5%;
+    left: 27.7%;
 }
 #oval-6 {
     width: 10px;
     height: 9px;
-    top: calc(20px + 67vw);
-    left: 40vw;
+    top: 60%;
+    left: 38%;
 }
 #oval-7 {
     width: 16px;
     height: 9px;
-    top: calc(20px + 43.5vw);
-    left: 34vw;
+    top: 40.5%;
+    left: 32%;
 }
 #oval-8 {
     width: 17.9px;
     height: 9.5px;
-    top: calc(20px + 27vw);
-    left: 32vw;
+    top: 24%;
+    left: 30.7%;
 }
 #oval-9 {
     width: 10px;
     height: 7px;
-    top: calc(20px + 18.2vw);
-    left: 57vw;
+    top: 16.9%;
+    left: 55.5%;
 }
 #oval-10 {
     width: 32px;
     height: 12px;
-    top: calc(20px + 13.8vw);
-    left: 49vw;
+    top: 12%;
+    left: 50%;
 }
 #oval-11 {
     width: 10px;
     height: 9px;
-    top: calc(20px + 17.9vw);
-    left: 79vw;
+    top: 16%;
+    left: 80%;
 }
 #oval-12 {
     width: 20px;
     height: 12px;
-    top: calc(20px + 15vw);
-    left: 68vw;
+    top: 12.7%;
+    left: 70%;
 }
 #oval-13 {
     width: 35px;
     height: 14px;
-    top: calc(20px + 11.5vw);
-    left: 56vw;
+    top: 9.4%;
+    left: 59%;
 }
 
-@media(min-width: 530px) {
-    p {
-        top: calc(20px + 4vw);
-        left: 3.7vw;
-        font-size: 25px;
-        padding: 14px 5px;
+@media(min-width: 495px) {
+    .positioning {
+        top: 3.2%;
+        left: 5%;
     }
 }
-@media(min-width: 690px) {
-    p {
-        top: 48px;
-        left: calc(((100vw - 690px) / 2) + 70px);
-    }
-    #oval-1 {
-        top: 189px;
-        left: calc(((100vw - 690px) / 2) + 69px);
-    }
-    #oval-2 {
-        top: 158px;
-        left: calc(((100vw - 690px) / 2) + 52px);
-    }
-    #oval-3 {
-        top: 115px;
-        left: calc(((100vw - 690px) / 2) + 54.5px);
-    }
-    #oval-4 {
-        top: 148px;
-        left: calc(((100vw - 690px) / 2) + 255px);
-    }
-    #oval-5 {
-        top: 119px;
-        left: calc(((100vw - 690px) / 2) + 208px);
-    }
-    #oval-6 {
-        top: 482px;
-        left: calc(((100vw - 690px) / 2) + 276px);
-        width: 12px;
-    }
-    #oval-7 {
-        top: 324px;
-        left: calc(((100vw - 690px) / 2) + 235px);
-    }
-    #oval-8 {
-        top: 206px;
-        left: calc(((100vw - 690px) / 2) + 221px);
-    }
-    #oval-9 {
-        top: 146px;
-        left: calc(((100vw - 690px) / 2) + 393px);
-    }
-    #oval-10 {
-        top: 115px;
-        left: calc(((100vw - 690px) / 2) + 338px);
-    }
-    #oval-11 {
-        top: 144px;
-        left: calc(((100vw - 690px) / 2) + 545px);
-    }
-    #oval-12 {
-        top: 124px;
-        left: calc(((100vw - 690px) / 2) + 469px);
-    }
-    #oval-13 {
-        top: 99px;
-        left: calc(((100vw - 690px) / 2) + 386px);
+@media(min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
+    .positioning {
+        top: 1%;
     }
 }
 </style>
