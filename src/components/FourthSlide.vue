@@ -16,9 +16,6 @@ export default {
 </script>
 
 <style scoped>
-.positioning {
-    left: 1%;
-}
 #oval-1 {
     width: 10px;
     height: 9px;
