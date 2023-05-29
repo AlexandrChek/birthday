@@ -16,7 +16,7 @@ p {
     background-color: white;
     color: red;
     border-radius: 100%;
-    font-size: 22.5px;
+    font-size: 22px;
     font-weight: bold;
 }
 

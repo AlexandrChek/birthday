@@ -26,7 +26,7 @@ export default {
   },
   data() {
     return {
-      slide: 1
+      slide: 5
     }
   },
   methods: {
