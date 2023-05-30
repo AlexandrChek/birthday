@@ -16,7 +16,7 @@ p {
     background-color: white;
     color: red;
     border-radius: 100%;
-    font-size: calc(17.9px + 1vw);
+    font-size: calc(16.5px + 1.5vw);
     font-weight: bold;
 }
 
@@ -28,7 +28,7 @@ p {
 }
 @media(min-width: 768px) {
    p {
-    font-size: 25px;
+    font-size: 28px;
    } 
 }
 </style>

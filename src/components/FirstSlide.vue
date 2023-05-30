@@ -17,7 +17,7 @@ export default {
 
 <style scoped>
 .positioning {
-    top: 2.5%;
+    top: 1%;
     left: 1%;
 }
 #oval-1 {
@@ -39,6 +39,11 @@ export default {
     left: 12%;
 }
 
+@media(min-width: 525px) {
+    .positioning {
+        top: 3%;
+    }
+}
 @media(min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
     .positioning {
         top: .5%;
