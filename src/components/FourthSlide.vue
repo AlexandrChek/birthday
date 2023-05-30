@@ -104,6 +104,7 @@ export default {
 @media(min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
     .positioning {
         top: 1%;
+        left: 1%;
     }
 }
 </style>
